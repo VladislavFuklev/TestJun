@@ -1,0 +1,114 @@
+@mixin block {
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(99, 99, 99);
+    }
+}
+.container-sm {
+    max-width: 1000px;
+}
+body {
+    background-color: #424242;
+
+}
+.logo-cent{
+    background-color: gray;
+    border-radius: 50%;
+    padding: 10px 9px;
+    color: rgb(187, 187, 187);
+    @include block
+}
+.navbar-brand-text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.btn-castom {
+    padding: 8px 16px;
+}
+
+.header-icon {
+    i {
+        background-color: gray;
+        border-radius: 50%;
+        color: rgb(177, 177, 177);
+        @include block
+    }
+}
+
+
+.left-block {
+    width: 315px;
+    height: 140px;
+    background-color: gray;
+    border-radius: 10px;
+    @include block
+}
+
+.left-square {
+    width: 154px;
+    background-color: gray;
+    height: 140px;
+    border-radius: 10px;
+    @include block
+}
+
+.error {
+    width: 482.26px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 140px;
+    border-radius: 7.5px;
+}
+
+.input-group>.form-control,
+.input-group>.form-select {
+    background-color: gray;
+    border: none;
+    position: relative;
+}
+
+.kart-img {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+
+    img {
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.atm-data::after {
+    content: '24 ЧТ';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.btn-footer {
+    background-color: gray;
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    @include block
+}
+
+.icon-arr {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    @include block
+}
+
