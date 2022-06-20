@@ -12,84 +12,88 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark ">
-        <div class="container-sm">
+    <nav class="navbar">
+        <div class="container-lg">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="img/logoPB.png" alt="" class="d-inline-block align-text-top">
-                <p class="navbar-brand-text ms-4 ">Приймаємо <br> готівку від:</p>
-                <p class="ms-3 m-0 logo-cent">50$</p>
+                <p class="navbar-brand-text">Приймаємо <br> готівку від:
+                    <p class="m-0 logo-cent  d-flex justify-content-center ms-2"><span>50$</span></p>
+                </p>
             </a>
 
             <div class="header-icon d-flex align-items-center">
-                <a href="#"><i class="fa-solid fa-gear fs-2 p-2"></i></a>
-                <a href="#"><i class="fa-solid btn-castom fa-info fs-2  ms-3"></i></a>
-                <a href="#"><i class="fa-solid fa-earth-europe fs-2 p-2 ms-3"></i></a>
+                <div><a href="#"><i class="fa-solid fa-gear fs-2 p-2"></i></a></div>
+                <div class="link-header"><a href="#">I</a></div>
+                <div class="link-header"><a  href="#">Eng</a></div>
             </div>
         </div>
     </nav>
 
-    <main class="main pt-3">
+    <main class="main">
         <div class="container-sm">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="left-block mt-2 p-3 d-flex flex-column justify-content-between">
-                        <div class="block-logo ">
+                    <div class="left-block p-3 d-flex flex-column justify-content-between">
+                        <div class="block-logo">
                             <img src="img/Nal.png" alt="">
                         </div>
-                        <div class="block-text text-light">Зняти готівку</div>
+                        <div class="block-text">Зняти готівку</div>
                     </div>
-                    <div class="left-block mt-2 p-3 d-flex flex-column justify-content-between">
+                    <div class="left-block mt16 p-3 d-flex flex-column justify-content-between">
                         <div class="block-logo ">
                             <img src="img/kart.png" alt="">
                         </div>
-                        <div class="block-text text-light">Поповнити картку</div>
+                        <div class="block-text">Поповнити картку</div>
                     </div>
-                    <div class="square-two d-flex">
-                        <div class="left-square mt-2 p-3 d-flex flex-column justify-content-between">
+                    <div class="square-two mt16 d-flex">
+                        <div class="left-square p-3 d-flex flex-column justify-content-between">
                             <div class="block-logo ">
                                 <img src="img/014-box.png" alt="">
                             </div>
-                            <div class="block-text text-light">Поповнити мобільний</div>
+                            <div class="block-text">Поповнити мобільний</div>
                         </div>
-                        <div class="left-square mt-2 ms-2 p-3 d-flex flex-column justify-content-between">
+                        <div class="left-square ms-2 p-3 d-flex flex-column justify-content-between">
                             <div class="block-logo ">
                                 <img src="img/sueare.png" alt="">
                             </div>
-                            <div class="block-text text-light">Інші послуги</div>
+                            <div class="block-text">Інші послуги</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-7 d-flex flex-column flex-wrap align-content-end">
-                    <div class="error mt-2 d-flex">
+                    <div class="error d-flex">
                         <div class="error-img">
                             <img src="img/error.png" alt="">
 
                         </div>
-                        <div class="d-flex flex-column justify-content-between p-2">
-                            <div class="text-light fs-5"> Банкомат тимчасово не зчитує безконтактно картки</div>
-                            <div class="error-text text-light fs-6 text-white-50">
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="text-error"> Банкомат тимчасово не зчитує безконтактно картки</div>
+                            <div class="error-text">
                                 Ви можете провести будь-яку іншу операцію
                             </div>
                         </div>
 
                     </div>
-                    <div class="kart d-flex justify-content-between mt-5">
-                        <div class="kart-descr mt-5">
+                    <div class="kart d-flex justify-content-between">
+                        <div class="kart-descr">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item active" aria-current="page">Для доступу до всіх послуг
                                     </li>
                                 </ol>
                             </nav>
-                            <h3 class="kart-title text-light">Вставте картку</h3>
-                            <div class="kart-name text-white-50">Visa, Master, Prostir</div>
+                            <h3 class="kart-title">Вставте картку</h3>
+                            <div class="kart-name">Visa, Master, Prostir</div>
                         </div>
                         <div class="kart-kart d-flex flex-column">
                             <div class="input-group mb-5 d-flex justify-content-center">
-                                <input type="text" class="form-control"
-                                    aria-label="Dollar amount (with dot and two decimal places)">
-                                <div class="kart-img text-center">
+                                <div class="form rounded"></div>
+                                <div class="kart-img">
                                     <img src="img/cart.png" alt="">
+                                    <div class="master-cart">
+                                        <span class="master-cart-item-red"></span>
+                                        <span class="master-cart-item-orange"></span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -106,21 +110,26 @@
         <div class="container-sm">
             <div class="row align-items-center">
                 <div class="col-md-5">
-                    <div class="atm-number text-white-50">CADN9001</div>
-                    <div class="atm-data fs-2 text-light">18:36</div>
+                    <div class="atm-number">CADN9001</div>
+                    <div class="atm-data">
+                        18:36
+                        <div class="data-place">24 <br> ЧТ</div>
+                    </div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-end ">
                     <div class="block-btn d-flex align-items-center">
-                        <button type="button" class="btn-footer ms-3">
+                        <button type="button" class="btn-footer">
+                            <div class="text-light nnn">Якщо немає картки</div>
                             <img src="img/Group.png" alt="">
                             <span class="block-btn-span ms-2">По QR коду</span>
                         </button>
-                        <button type="button" class="btn-footer ms-3">
+                        <button type="button" class="btn-footer">
                             <img src="img/Vector.png" alt="">
 
                             <span class="block-btn-span ms-2">За телефоном</span>
                         </button>
-                        <a href="https://vladislavfuklev.github.io/TaskJun2/"><i class="fa-solid icon-arr fa-circle-arrow-right fs-3 ms-3"></i></a>
+                        <a href="https://vladislavfuklev.github.io/TaskJun2/"><i
+                                class="fa-solid fa-angle-right icon-arr"></i></a>
                     </div>
                 </div>
             </div>
